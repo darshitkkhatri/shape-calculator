@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index page</title>
+    
+</head>
+
+<body>
+    <div style="align-self: center; width: 100%; padding: 0 0 0 200px">
+       <img src="/ui/images/header_bg.gif">
+    </div>
+
+    <div style="width: 980px;padding: 0 0 0 200px">
+        <div style="float: left; width: 400px;padding: 0 0 0 50px;">
+            <h3>Welcome to Shape Calculator</h3>
+            <p>
+                Shape Calculator is an interactive web application. To the right you will
+            find the 3 step application. Follow the instructions in each step.
+            Clicking cancel will take you back to step 1. Enjoy!
+            A small river named Duden flows by their place and supplies it with the
+            necessary regelialia. It is a paradisematic country, in which roasted parts of
+            sentences fly into your mouth.
+            Even the all-powerful Pointing has no control about the blind texts it is an
+            almost unorthographic life One day however a small line of blind text by the
+            name of Lorem Ipsum decided to leave for the far World of Grammar. The
+            Big Oxmox advised her not to do so, because there were thousands of bad
+            Commas.
+            </p>
+        </div>
+        <div style="float: left; width: 200px;border: solid;padding: 0 0 0 50px;">
+            <h2>Step1</h2>
+            <p>
+                Select your shape
+            Please select the shape that you would like
+            to calculate the area of and press the
+            button "Go to step 2"
+            </p>
+            <form action="/step2" method="POST">
+                {{#shapes}}
+                    <input type="radio" name="shape" value="{{this}}"> {{this}}<br>    
+                {{/shapes}}
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        <div style="float: left; width: 150px; height:250px; background-color:#95a5a6;border: solid;padding: 0 0 0 50px;">Right Stuff</div>
+        <br style="clear: left;" />
+    </div>
+
+</body>
+</html>

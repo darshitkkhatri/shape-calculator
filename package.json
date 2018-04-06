@@ -1,0 +1,16 @@
+{
+  "name": "shape-calculator",
+  "version": "1.0.0",
+  "description": "shap calculator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "darshit khatri",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "querystring": "^0.2.0"
+  }
+}
